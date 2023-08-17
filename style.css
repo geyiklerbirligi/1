@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #00197e;
+  transition: 0.5s;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+header h4 {
+  position: relative;
+  font-size: 70px;
+}
+header ul {
+  position: relative;
+  display: flex;
+}
+header ul li {
+  list-style: none;
+}
+header ul li a {
+  display: inline-block;
+  color: #fff;
+  font-weight: 400;
+  margin-left: 40px;
+  text-decoration: none;
+  transition: 0.35s;
+}
+header ul li a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  display: block;
+  margin: auto;
+  transition: 0.29s;
+}
+header ul li a:hover:after {
+  width: 100%;
+}
+.content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .textBox {
+  position: relative;
+  max-width: 700px;
+}
+.content .textBox h2 {
+  color: #fff;
+  font-size: 4em;
+  line-height: 1.5em;
+  font-weight: 900;
+}
+.content .textBox h2 span {
+  font-size: 2em;
+}
+.content .textBox p {
+  color: #fff;
+}
+.content .textBox a {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 8px 20px;
+  background: #fff;
+  color: #111;
+  border-radius: 40px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.35s;
+}
+.content .textBox a:hover {
+  background: black;
+  color: #fff;
+  transform: translateY(-3px);
+}
+.content .contact-btn {
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  display: inline-block;
+  margin-top: 340px;
+}
+.content .contact-btn a {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 8px 20px;
+  background: #fff;
+  color: #111;
+  border-radius: 40px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.35s;
+}
+.content .contact-btn:hover a {
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  color: #303030;
+  transform: translateY(-3px);
+}
+.content .textBox i {
+  display: inline-block;
+}
+.content .imgBox {
+  width: 100px;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* slider */
+.image-slideshow {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 1}
+}
