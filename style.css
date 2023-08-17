@@ -145,6 +145,20 @@ img {
   animation-name: fade;
   animation-duration: 2s;
 }
+.bottom {
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background: #262626;
+  font-weight: 300;
+}
+.bottom p {
+  color: #fff;
+}
+.bottom i {
+  color: #ff004f;
+  border-radius: 6px;
+}
 @keyframes fade {
   from {opacity: .5}
   to {opacity: 1}
