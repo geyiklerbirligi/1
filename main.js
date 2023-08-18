@@ -1,15 +1,11 @@
-let index = 0;
-displayImages();
-function displayImages() {
-  let i;
-  const images = document.getElementsByClassName("image");
-  for (i = 0; i < images.length; i++) {
-    images[i].style.display = "none";
-  }
-  index++;
-  if (index > images.length) {
-    index = 1;
-  }
-  images[index-1].style.display = "block";
-  setTimeout(displayImages, 2000); 
+let menu = document.querySelector('#menu-icon') ;
+let navbar = document.querySelector('.navbar') ;
+
+menu.onclick = () => {
+  menu.classList.toggle ('bi-x');
+  navbar.classList.toggle ('active');
+}
+window.onscroll = () => {
+  menu.classList.remove ('bi-x');
+  navbar.classList.remove ('active');
 }

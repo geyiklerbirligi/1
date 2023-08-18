@@ -4,54 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Geyiklerbirliği</title>
-
   <link rel="stylesheet" href="style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
-  
+
 </head>
 <body>
-  <section class="sec">
-    <header>
-      <a href=""><img src="images/gb-logo.png" alt=""></a>
-      <ul>
-        <li><a href="#">Kulüp</a></li>
-        <li><a href="#">Haberler</a></li>
-        <li><a href="#">Fikstür</a></li>
-        <li><a href="#">Taraftar</a></li>
-        <li><a href="#">Geyikstore</a></li>
-      </ul>
-    </header>
-    <div class="content">
-      <div class="textBox">
-        <h2>Geyiklerbirliği resmi sitesi yayında!</h2>
-          <a href="#">Şanlı tarihimize tanıklık et <i class="bi bi-arrow-right-circle"></i></a>
-          <a href="https://www.instagram.com/geyiklerbirligi/" target="_blank">Bizi Instagramdan Takip Et <i class="bi bi-instagram"></i></a>
-      </div>
+  <!-- nav bar -->
+  <header>
+    <a href="#" class="logo"> <img src="images/gb-logo.png" alt=""></a>
+    <div class="bi bi-list" id="menu-icon"></div>
+  
+    <ul class="navbar">
+      <li><a href="#home">Kulüp</a></li>
+      <li><a href="#shop">Haberler</a></li>
+      <li><a href="#delivery">Taraftar</a></li>
+      <li><a href="#about">Basında Biz</a></li>
+      <li><a href="#contact">Geyikstore</a></li>
+    </ul>
 
-      <!-- slider -->
-     
-      <div class="image-slideshow">
-        <div class="image fade">
-        <img src="images/image.png" alt="Mountain Top">
-        </div>        
-        <div class="image fade">
-        <img src="images/imagee.png" alt="Palm Trees">
-        </div>        
-        <div class="image fade">
-        <img src="images/image2.png" alt="Neon Sign">
-        </div>
-      </div>
+  </header>
 
+  <!-- home -->
+  <section class="home" id="home">
+    <div class="home-text">
+      <h1>Geyiklerbirliği</h1>
+      <h1>resmi sitesi yayında!</h1>
+      <h2>Sen de aramıza katıl!</h2>
+      <a href="#" class="btn">Şanlı tarihimiz hakkında bilgi al</a>
+    </div>
+    <div class="home-img">
+      <img src="images/imagee.png">
     </div>
   </section>
-  <div class="bottom">
-    <p>Made By <i class="bi bi-stars"></i> interseven <i class="bi bi-arrow-through-heart-fill"></i></p>
-  </div>
+
+    <!-- contact -->
+    <section class="contact" id="contact">
+      <div class="social">
+        <a href="https://www.instagram.com/geyiklerbirligi/" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-twitter"></i></a>
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-youtube"></i></a>
+      </div>
+      <p>Made by<i class="bi bi-stars"></i> interseven <i class="bi bi-stars"></i></p>
+    </section>
+
+  <!-- link to js -->
   <script src="main.js"></script>
 </body>
 </html>
